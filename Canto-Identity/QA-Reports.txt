@@ -1,0 +1,2 @@
+instead of keeping a variable for counting the number of nft minted , its advised to use Counters library.
+It helps in making the code more readable and less prone to errors . 
