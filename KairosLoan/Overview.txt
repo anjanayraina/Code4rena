@@ -1,0 +1,10 @@
+This seems to be a system for people to stake their nft in return of loans . 
+The NFT can be returned if the loans are returned with intrest 
+
+Attack Vectors - 
+
+1) AdminFacet : It does have functions that can be directly attacked but ONE and Ray in from the contract Global.sol
+can be manipulated to launch an attack . Also the functions createTrance ,setMinOffer and setBorrowAmounPerOfferLowef
+are the most vurnerable  
+
+2) AuctionFacet - 
