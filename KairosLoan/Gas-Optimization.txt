@@ -1,4 +1,6 @@
 AuctionFacet.sol  - 
 
 Line 78 : Using memory instead of storage is recommended as we are not actually changing loan that we are operating on 
-in the checkLoanStatus function . So , it will save some gas to change it to memory .
+in the checkLoanStatus function . So , it will save some gas to change it to memory .But the function protocalStorage only
+returns storage , so it is advised to create a function in Global.sol that returns the loan in the form of memory.This will help in 
+all the function where the loan is only used as a sort of check . 
