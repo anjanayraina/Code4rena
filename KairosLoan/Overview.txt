@@ -11,4 +11,5 @@ Attack Vectors -
 can be manipulated to launch an attack . Also the functions createTrance ,setMinOffer and setBorrowAmounPerOfferLowef
 are the most vurnerable  
 
-2) AuctionFacet - 
+2) AuctionFacet - Thsi contract handles the liquidity of the collateral. The buy function seems to be the most vurnreable 
+of a DOS attack. Also the price and  useLoan functions are the most at risk of an error or an attack 
