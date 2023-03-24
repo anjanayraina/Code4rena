@@ -1,0 +1,4 @@
+AuctionFacet.sol  - 
+
+Line 78 : Using memory instead of storage is recommended as we are not actually changing loan that we are operating on 
+in the checkLoanStatus function . So , it will save some gas to change it to memory .
