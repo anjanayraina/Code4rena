@@ -1,0 +1,4 @@
+This seems to be a lending platform that using a protocol called prime money market . but it is different from the other 
+protocls in the way that the tokens that are just sitting idle in the exchanges are actually put on other exchanges like compound V3 
+and aave so that they can also earn yield on that as well . Apart from their working is the same as that of some normal lending platform
+. They have lenders and borrowers in their place that provide and take loans . 
