@@ -1,0 +1,5 @@
+Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utilities/FeeWrapper.sol#:~:text=for%20(uint256%20i%20%3D%200%3B%20i%20%3C%20tokenAmounts.length%3B%20%2B%2Bi)%20%7B
+
+File : FeeWrapper.sol 
+
+In the for loop , its better to save the length of the array in a variable and then compare it with the array 
