@@ -1,0 +1,3 @@
+https://code4rena.com/reports/2023-01-opensea#g-02-shift-left-by-5-instead-of-multiplying-by-32:~:text=it%E2%80%99s%20been%20taught.-,%5BG%2D02%5D%20Shift%20left%20by%205%20instead%20of%20multiplying%20by%2032,-Estimated%20savings%3A%2022
+
+using shift for some of the opreations that have numbers like 2  ,4 , 8  , 16 ,  32 is more gas efficint as the opcode is takes less gas 

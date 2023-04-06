@@ -1,0 +1,19 @@
+Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#:~:text=function%20isAuthorized(address%20src)%20internal%20view%20returns%20(bool)%20%7B
+
+In the isAuthorized , the use of if and else can be ommited and the bool value can be directly returned from the function 
+
+so instead of the function 
+
+     function isAuthorized(address src)  internal  view returns (bool) {
+        if (src == owner) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+you can use this 
+
+   function isAuthorized2(address src) internal  view returns (bool) {
+        return src == owner;
+    }
