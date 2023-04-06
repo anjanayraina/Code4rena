@@ -1,0 +1,4 @@
+Link : https://code4rena.com/reports/2023-01-drips#g-07-transfer-erc20-immediately-to-the-user:~:text=%5B-,G%2D06%5D%20Transfer%20erc20%20immediately%20to%20Dripshub,-Dripshub%3A%20give()
+
+instead of using msg.sender in the functions that dont require the caller to make sensitive manipulations , those functions can be 
+made to use extra parameter with the address of the calling person 
