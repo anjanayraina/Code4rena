@@ -11,3 +11,4 @@ Other instances : https://github.com/code-423n4/2023-04-rubicon/blob/main/contra
 https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#:~:text=for%20(uint%20i%20%3D%200%3B%20i%20%3C%20payAmts.length%3B%20i%2B%2B)
 https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#:~:text=ids)%20external%20%7B-,for%20(uint%20i%20%3D%200%3B%20i%20%3C%20ids.length%3B%20i%2B%2B,-)%20%7B
 https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#:~:text=_span%5Baddress(pay_gem)%5D%5Baddress(buy_gem)%5D%2B%2B
+https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#:~:text=_span%5Bpay_gem%5D%5Bbuy_gem%5D%2D%2D
