@@ -1,0 +1,37 @@
+Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#:~:text=function%20_sort(,)%20internal%20%7B
+
+File : RubiconMarket.sol
+
+Esitmated Gas Saving : 50 gas 
+
+ function compare1(uint a , uint b
+     , uint c , uint d , uint e , uint f) internal pure returns(bool){
+         return (a != b || c != d || e != f);
+    }
+
+    function compare2(uint a , uint b
+     , uint c , uint d , uint e , uint f) internal pure returns(bool){
+         return ((a ^ b) | (c ^ d) | (e ^ f)) != 0;
+    }
+
+    in the given functions ,  the following are logical equavalent but still dont consume the same amount of gas 
+    1)   (a != b || c != d || e != f);
+    2)   ((a ^ b) | (c ^ d) | (e ^ f)) != 0;
+
+    you can consider overriding the following for saving some more gas : 
+
+    pos = pos == 0 ||
+            offers[pos].pay_gem != pay_gem ||
+            offers[pos].buy_gem != buy_gem ||
+            !isOfferSorted(pos)
+            ? _find(id)
+            : _findpos(id, pos);
+
+    to 
+
+    pos = ((pos^ 0) |
+           (offers[pos].pay_gem ^ pay_gem) |
+            (offers[pos].buy_gem ^ buy_gem) |
+            !isOfferSorted(pos) ) != 0
+            ? _find(id)
+            : _findpos(id, pos);
