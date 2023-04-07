@@ -1,0 +1,14 @@
+Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utilities/FeeWrapper.sol#:~:text=function%20calculateFee(,)
+
+File name : FeeWrapper.sol 
+
+in the function calculateFee ,  the function parameter tokenAmounts is set as memory but it can be changed to calldata as 
+the parameter is only used to view the data . 
+
+Consider this : 
+
+   function calculateFee(
+        uint256[] calldata tokenAmounts,
+        uint256 feeType,
+        uint256 feeValue
+    )
