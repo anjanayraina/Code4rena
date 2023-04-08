@@ -29,10 +29,10 @@ Esitmated Gas Saving : 50 gas
 
     to 
 
-    pos = ((pos^ 0) |
+    pos = (((pos^ 0) |
            (offers[pos].pay_gem ^ pay_gem) |
-            (offers[pos].buy_gem ^ buy_gem) |
-            !isOfferSorted(pos) ) != 0
+            (offers[pos].buy_gem ^ buy_gem) ) ||
+            !isOfferSorted(pos)  != 0)
             ? _find(id)
             : _findpos(id, pos);
 
@@ -60,7 +60,8 @@ However, it is much cheaper to use the bitwise OR operator (|) than comparing th
         //return (a != b || c != d); // 495
         //return (a ^ b | c ^ d) != 0; // 442
     }
-These are logically equivalent too, as the OR bitwise operator (|) would result in a 1 somewhere if any value is not 0 between the XOR (^) statements, meaning if any XOR (^) statement verifies that its arguments are different.
+These are logically equivalent too, as the OR bitwise operator (|) would result in a 1 somewhere if any 
+value is not 0 between the XOR (^) statements, meaning if any XOR (^) statement verifies that its arguments are different.
 
 
 Other instances : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#:~:text=backwards%20semantic%20compatibility.-,if%20(,%7D,-offers%5Bid%5D.pay_amt
