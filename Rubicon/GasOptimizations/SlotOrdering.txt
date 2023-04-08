@@ -1,0 +1,44 @@
+Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L206:~:text=OfferInfo)%20public%20offers%3B-,bool%20locked%3B,-///%20%40dev%20This%20parameter
+
+File: RubiconMarket.sol 
+
+The amount of gas taken to delpoy the contract depends unpon the slots of memory assigned to the values in the contract 
+in the current ordering , 6 slots will be consumed with no extra space left for any other variable as the slot space containing bool
+will only store the bool and the assign feeBPS the next slot , wasting the remaining space at the slot with bool 
+
+  uint256 public last_offer_id;
+
+    /// @dev The mapping that makes up the core orderbook of the exchange
+    mapping(uint256 => OfferInfo) public offers;
+
+    bool locked;
+
+    /// @dev This parameter is in basis points
+    uint256 internal feeBPS;
+
+    /// @dev This parameter provides the address to which fees are sent
+    address internal feeTo;
+
+    bytes32 internal constant MAKER_FEE_SLOT = keccak256("WOB_MAKER_FEE");
+
+    Consider ovverding it to :
+
+      uint256 public last_offer_id;
+
+    /// @dev The mapping that makes up the core orderbook of the exchange
+    mapping(uint256 => OfferInfo) public offers;
+
+  
+
+    /// @dev This parameter is in basis points
+    uint256 internal feeBPS;
+
+    /// @dev This parameter provides the address to which fees are sent
+    address internal feeTo;
+
+    bytes32 internal constant MAKER_FEE_SLOT = keccak256("WOB_MAKER_FEE");
+
+    bool locked;
+
+
+    This will have the 6th slot with some remaining spacce in which some other variables can be stored. 
