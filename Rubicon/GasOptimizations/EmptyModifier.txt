@@ -1,0 +1,12 @@
+Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L206:~:text=modifier%20can_offer()%20virtual,%7D
+
+File : RubiconMarket.sol 
+
+An Empty virtual modifier has been placed in the contract , even if you want to override later there is no need of adding an 
+empty modifier in the contract , this just takes up storage space while uploading the contract 
+
+ modifier can_offer() virtual {
+        _;
+    }
+
+Conisder removing the modiifer from the contract 
