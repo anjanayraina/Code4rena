@@ -1,0 +1,5 @@
+Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L206:~:text=function%20bump(,%7D
+
+File : RubiconMarket.sol 
+
+Empty function bump that is not doing anything to the state , consider removing from the contract 

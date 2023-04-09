@@ -1,0 +1,4 @@
+Link : https://code4rena.com/reports/2022-07-golom/#low-risk-and-non-critical-issues:~:text=%5BL%E2%80%9104%5D%20require()%20should%20be%20used%20instead%20of%20assert()
+
+it is suggested even in the solidity documentation that assert should only be used for high criticality bugs. 
+Small  errors or even inputs errors should not be included in assert 
