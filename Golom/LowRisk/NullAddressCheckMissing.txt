@@ -1,0 +1,3 @@
+Link : https://code4rena.com/reports/2022-07-golom/#low-risk-and-non-critical-issues:~:text=%5BL%E2%80%9109%5D%20Missing%20checks%20for%20address(0x0)%20when%20assigning%20values%20to%20address%20state%20variables
+
+Always add null value check when you are assigning the value to the state variables 
