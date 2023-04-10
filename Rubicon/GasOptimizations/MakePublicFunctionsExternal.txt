@@ -1,0 +1,5 @@
+Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L733-L750
+
+File : RubiconMarket.sol 
+
+The function is not called from inside the contract so consider making the function external instead of public 

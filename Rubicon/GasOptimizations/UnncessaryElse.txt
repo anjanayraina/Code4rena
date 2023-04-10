@@ -1,7 +1,7 @@
 Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#:~:text=function%20isAuthorized(address%20src)%20internal%20view%20returns%20(bool)%20%7B
 File : RubiconMarket.sol 
 Estimated gas saving : 53 gas 
-In the isAuthorized , the use of if and else can be ommited and the bool value can be directly returned from the function 
+In the isAuthorized , the use of if and else can be omitted and the bool value can be directly returned from the function 
 
 so instead of the function 
 
@@ -19,4 +19,4 @@ you can use this
         return src == owner;
     }
 
-When i tetsted on remix , this saved about 53 units of gas . 
+When i tested on remix , this saved about 53 units of gas . 
