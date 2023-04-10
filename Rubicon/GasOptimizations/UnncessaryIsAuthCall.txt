@@ -1,0 +1,8 @@
+Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L35-L40
+
+File : RubiconMarket.sol 
+
+Estimated gas saved: 80 gas 
+
+the isAuthorized fucntion is an internal function and is only called once and that too in a modifier . 
+Consider addding the check directly in the modifier itself to prevent unnecessarily gas cost 

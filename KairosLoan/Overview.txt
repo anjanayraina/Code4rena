@@ -2,7 +2,7 @@ This seems to be a system for people to stake their nft in return of loans .
 The NFT can be returned if the loans are returned with intrest 
 
 Some important contract - 
-Global.sol - This is the storage contract and the other contracts work as a proxy for this contractt
+Global.sol - This is the storage contract and the other contracts work as a proxy for this contract
 
 
 Attack Vectors - 
@@ -11,5 +11,5 @@ Attack Vectors -
 can be manipulated to launch an attack . Also the functions createTrance ,setMinOffer and setBorrowAmounPerOfferLowef
 are the most vurnerable  
 
-2) AuctionFacet - Thsi contract handles the liquidity of the collateral. The buy function seems to be the most vurnreable 
+2) AuctionFacet - This contract handles the liquidity of the collateral. The buy function seems to be the most vurnreable 
 of a DOS attack. Also the price and  useLoan functions are the most at risk of an error or an attack 
