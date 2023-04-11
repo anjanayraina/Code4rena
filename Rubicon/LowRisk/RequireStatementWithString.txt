@@ -15,3 +15,10 @@ Other instances : https://github.com/code-423n4/2023-04-rubicon/blob/main/contra
     https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L604
     https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L605 
     https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L612-L616
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L753 
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L757 
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L938
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L941-L944
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L1034
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L1075
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L1226
