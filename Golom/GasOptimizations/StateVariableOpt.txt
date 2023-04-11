@@ -1,0 +1,3 @@
+Link : https://code4rena.com/reports/2022-07-golom/#n06--remove-include-for-hardhats-console:~:text=%5BG%2D15%5D%20x%20%2B%3D%20y%20costs%20more%20gas%20than%20x%20%3D%20x%20%2B%20y%20for%20state%20variables
+
+Use x = x+y instead of using x+=y for state variables as it costs less gass than the prior 
