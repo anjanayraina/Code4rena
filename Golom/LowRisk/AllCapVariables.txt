@@ -1,0 +1,3 @@
+Link : https://code4rena.com/reports/2022-07-golom/#n06--remove-include-for-hardhats-console:~:text=%5BN%E2%80%9118%5D%20Variable%20names%20that%20consist%20of%20all%20capital%20letters%20should%20be%20reserved%20for%20constant/immutable%20variables
+
+All caps variables should be reserved for constant or immutable variables only 

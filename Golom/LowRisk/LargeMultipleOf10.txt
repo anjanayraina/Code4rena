@@ -1,0 +1,3 @@
+Link : https://code4rena.com/reports/2022-07-golom/#n06--remove-include-for-hardhats-console:~:text=%5BN%E2%80%9113%5D-,Large%20multiples%20of%20ten%20should%20use%20scientific%20notation%20(e.g.%201e6)%20rather%20than%20decimal%20literals%20(e.g.%201000000)%2C%20for%20readability,-There%20are%202
+
+large multiples of 10 must have scientific notation like 1e6 rather than decimal notation 
