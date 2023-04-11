@@ -1,0 +1,17 @@
+Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#:~:text=)%20virtual%20%7B-,require(isActive(id))%3B,-_%3B
+
+Require statement must be followed by a string that explains the reason for the statement failing . 
+
+Other instances : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#:~:text=)%20virtual%20%7B-,require(isActive(id))%3B,-require(
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L252-L256
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L265
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L459-L461
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L488
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L518-L525
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L538
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L565
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L581 
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L598
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L604
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L605 
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L612-L616
