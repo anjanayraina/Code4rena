@@ -1,0 +1,4 @@
+Link : https://code4rena.com/reports/2022-07-golom/#n06--remove-include-for-hardhats-console:~:text=%5BN%E2%80%9121%5D%20Event%20is%20missing%20indexed%20fields
+
+events should be indexed for off chain tools to find these events on the chain more quickly . If the gas is not concern , then try 
+indexing the events 

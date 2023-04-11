@@ -1,0 +1,3 @@
+Link : https://code4rena.com/reports/2022-07-golom/#n06--remove-include-for-hardhats-console:~:text=%5BG%2D11%5D-,Splitting%20require()%20statements%20that%20use%20%26%26%20saves%20gas,-Instead%20of%20using
+
+Splitting the require statements instead of using && can save more gas 
