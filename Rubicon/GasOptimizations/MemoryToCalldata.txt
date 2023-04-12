@@ -3,7 +3,7 @@ Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utiliti
 File name : FeeWrapper.sol 
 
 in the function calculateFee ,  the function parameter tokenAmounts is set as memory but it can be changed to calldata as 
-the parameter is only used to view the data . 
+the parameter is only used to view the data . Using calldata for view only data saves a lot of gas 
 
 Consider this : 
 
@@ -12,3 +12,11 @@ Consider this :
         uint256 feeType,
         uint256 feeValue
     )
+
+    other instances : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utilities/FeeWrapper.sol#L29
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utilities/FeeWrapper.sol#L49
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utilities/FeeWrapper.sol#L61
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utilities/FeeWrapper.sol#L77
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utilities/FeeWrapper.sol#L93
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utilities/FeeWrapper.sol#L109
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/V2Migrator.sol#L30
