@@ -1,0 +1,5 @@
+Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L288
+
+function that are not called from inside the contract can be made external instead of public to save some gas 
+
+some other instance : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L574
