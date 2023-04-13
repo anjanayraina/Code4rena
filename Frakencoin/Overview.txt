@@ -1,0 +1,2 @@
+The Frankencoin (ZCHF), an oracle-free, collateralized Swiss Franc stablecoin that is intended to track the value of the 
+Swiss Franc
