@@ -1,2 +1,12 @@
 The Frankencoin (ZCHF), an oracle-free, collateralized Swiss Franc stablecoin that is intended to track the value of the 
-Swiss Franc
+Swiss Franc. 
+
+Some important points: 
+It is truly decentralized in the sense that anyone can propose new minting mechanisms and take the mechanisms to auction 
+
+Anyone having more than 3% of the stability reserve can veto new minting mechanisms. 
+
+There are Stablecoin bridges as well, they allow for the swapping of Frankcoin to and from another token with 1:1 pegging 
+
+Minting Hub: this is the contract that is responsible for minting new Frankcoin against a collateral given that there is a position
+created.
