@@ -1,3 +1,5 @@
+Introduction 
+
 This is kind of like the same system as seen in DNS services. The main us of this is that map human readable names like 
 anjanay.eth to computer recognized identifiers like addresses , content data and hashes . It works kind of like the same way 
 DNS does with heirarchal way of arranging dot seperated names with the owner having full control over the subdomains 
@@ -5,3 +7,13 @@ DNS does with heirarchal way of arranging dot seperated names with the owner hav
 Top level domains are owner by smart contracts (e.g. .eth or .test) and the owner of a domain can create and configure the underlying 
 subdomains as they want . For example lets say that alice owns alice.eth , she can create a subdomain pay.alice.eth and configure it 
 as she wants   
+
+Structure : 
+
+It has two main components  
+
+1) Registry : It consists of a smart contract that maintains a list of all the domains nand subdomains and stores the information 
+like the owner of domain, resolver of domain and the caching time to live for all records .For more details : https://docs.ens.domains/contract-api-reference/ens
+
+2) Resolver : They are the ones that are actaully converting the name to the address . For more details : 
+https://docs.ens.domains/contract-api-reference/publicresolver

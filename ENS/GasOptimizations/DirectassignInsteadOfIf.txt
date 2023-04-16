@@ -1,0 +1,27 @@
+# [G-01] Using ternary operator saves more Gas 
+
+Link : https://github.com/code-423n4/2023-04-ens/blob/main/contracts/dnssec-oracle/BytesUtils.sol#L68
+
+Consider using a ternary operator instead of assigning a value to a variable and then changing afterwards
+This is save the gas for the assiging and the re assigning of the variable 
+
+** POC **
+
+    pragma solidity 0.8.9;
+    contract test1{
+        // gas cost : 814
+        function comapre1(uint x , uint y) public returns (uint ){
+            uint temp = x;
+            if(x  > y){
+                temp = y;
+            }
+
+            return temp;
+        }
+        // gas cost : 777
+        function compare2(uint x , uint y) public returns(uint){
+            return x < y ? x : y; 
+        }
+    }
+
+Total gas saved : 50 gas 
