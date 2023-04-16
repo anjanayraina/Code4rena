@@ -1,0 +1,2 @@
+https://gist.github.com/YinjiDawn/8442dfeff30af72ac83cd8ac657ef954#gas13-x--y-costs-more-gas-than-x--x--y-for-state-variables
+https://gist.github.com/YinjiDawn/8442dfeff30af72ac83cd8ac657ef954#nc2-avoid-floating-pragmas-the-version-should-be-locked

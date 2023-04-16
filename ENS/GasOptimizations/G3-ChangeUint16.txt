@@ -1,0 +1,7 @@
+# [G-03] Uint16 can be changed to Uint8 
+
+Since the value assigned to a constant variable can't be changed , so the uint16 can be changed to uint8 as the value of 1 can 
+be contained in it as well 
+
+Total instaces : https://github.com/code-423n4/2023-04-ens/blob/main/contracts/dnsregistrar/DNSClaimChecker.sol#L16
+                https://github.com/code-423n4/2023-04-ens/blob/main/contracts/dnsregistrar/DNSClaimChecker.sol#L17
