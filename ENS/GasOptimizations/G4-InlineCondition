@@ -1,0 +1,22 @@
+# [G-04] Inline the variables used only once 
+
+Varibales that are used only once can be inlined to save some gas ,they dont need to be stored in memory as 
+they are only used once 
+
+For example : https://github.com/code-423n4/2023-04-ens/blob/main/contracts/dnsregistrar/DNSRegistrar.sol#L73-L77
+
+The code can be changed from : 
+
+modifier onlyOwner() {
+        Root root = Root(ens.owner(bytes32(0)));
+        address owner = root.owner();
+        require(msg.sender == owner);
+        _;
+    }
+
+to 
+
+modifier onlyOwner() {
+        require(msg.sender == Root(ens.owner(bytes32(0))).owner());
+        _;
+    }

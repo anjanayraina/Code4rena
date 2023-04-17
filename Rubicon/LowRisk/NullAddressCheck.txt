@@ -4,3 +4,11 @@ Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/Rubicon
 Null Address Check not added 
 
 Consider adding null value check for (0x0) address when you are assigning the value to address state variables 
+
+consider adding the check : 
+
+function setOwner(address owner_) external auth {
+    require(owner_ != address(0))
+        owner = owner_;
+        emit LogSetOwner(owner);
+    }

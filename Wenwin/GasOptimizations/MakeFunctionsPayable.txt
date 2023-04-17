@@ -1,0 +1,4 @@
+Link: https://code4rena.com/reports/2023-03-wenwin#g-01-use-calldata-instead-of-memory-for-function-parameters:~:text=%5BG%2D05%5D%20Functions%20guaranteed%20to%20revert%20when%20called%20by%20normal%20users%20can%20be%20marked%20payable
+
+functions that can only be called by some sub-section of the participants , making them payable will make the functions cost 
+less gas than required . So functions garunteed to be reverted by normal users can be made payable 

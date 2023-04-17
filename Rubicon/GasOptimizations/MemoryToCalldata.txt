@@ -20,3 +20,7 @@ Consider this :
     https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utilities/FeeWrapper.sol#L93
     https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utilities/FeeWrapper.sol#L109
     https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/V2Migrator.sol#L30
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/BathHouseV2.sol#L65
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/BathHouseV2.sol#L82
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/BathHouseV2.sol#L116
+    https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/BathHouseV2.sol#L117

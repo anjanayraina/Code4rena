@@ -1,7 +1,7 @@
 Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#:~:text=modifier%20synchronized()%20%7B,%7D
 
-File : RubiconMarket.sol 
+File: RubiconMarket.sol 
 
-Its not advised to make state changes in the contract using the modifier , the best practice is to use the function itself for the 
-state changes . In this case , the locked variable is being changed value . 
-Modifiers are only there for checks , the state changes should be restricted to functions 
+It's not advised to make state changes in the contract using the modifier, the best practice is to use the function itself for the 
+state changes. In this case, the locked variable is being changed value. 
+Modifiers are only there for checks, the state changes should be restricted to functions 

@@ -1,0 +1,12 @@
+Link: https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/BathHouseV2.sol#L23
+
+Consider making the events indexed, at least one of the parameters must be indexed as indexed events are much easier to find than 
+for the off-chain tools 
+
+other instances: https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/BathHouseV2.sol#L24
+https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/periphery/BathBuddy.sol#L261
+https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/periphery/BathBuddy.sol#L265
+https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/periphery/BathBuddy.sol#L266
+https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utilities/poolsUtility/Position.sol#L50
+https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utilities/poolsUtility/Position.sol#L51
+https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/utilities/poolsUtility/Position.sol#L52

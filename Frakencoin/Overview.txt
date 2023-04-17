@@ -8,5 +8,5 @@ Anyone having more than 3% of the stability reserve can veto new minting mechani
 
 There are Stablecoin bridges as well, they allow for the swapping of Frankcoin to and from another token with 1:1 pegging 
 
-Minting Hub: this is the contract that is responsible for minting new Frankcoin against a collateral given that there is a position
+Minting Hub: this is the contract that is responsible for minting new Frankcoin against collateral given that there is a position
 created.

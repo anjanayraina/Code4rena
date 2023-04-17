@@ -1,0 +1,6 @@
+# [G-02] Internal function called only once can be inlined 
+
+An internal function that is only called once from the contract can be inlined to the calling function so save 
+gas cost in calling of the function 
+
+Total Instances : https://github.com/code-423n4/2023-04-ens/blob/main/contracts/dnssec-oracle/BytesUtils.sol#L52-L59

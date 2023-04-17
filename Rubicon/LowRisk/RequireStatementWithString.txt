@@ -1,4 +1,5 @@
 Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol?#L246
+
 Require statement must be followed by a string that explains the reason for the statement failing . 
 
 Other instances :

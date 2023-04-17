@@ -1,9 +1,9 @@
-# [G-01] Using ternary operator saves more Gas 
+# [G-01] Using the ternary operator saves more Gas 
 
 Link : https://github.com/code-423n4/2023-04-ens/blob/main/contracts/dnssec-oracle/BytesUtils.sol#L68
 
 Consider using a ternary operator instead of assigning a value to a variable and then changing afterwards
-This is save the gas for the assiging and the re assigning of the variable 
+This saves the gas for the assigning and the re-assigning of the variable 
 
 ** POC **
 
@@ -24,4 +24,4 @@ This is save the gas for the assiging and the re assigning of the variable
         }
     }
 
-Total gas saved : 50 gas 
+Total gas saved: 40 gas per instance 

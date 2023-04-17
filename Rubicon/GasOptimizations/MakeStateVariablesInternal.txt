@@ -1,9 +1,9 @@
-Link : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L675
+Link: https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L675
 
-consier making the bool state variables internal as the contract RubiconMarket is not getting inherited further so there is no need for the 
+consider making the bool state variables internal as the contract RubiconMarket is not getting inherited further so there is no need for the 
 variables to be public 
 
-other instance : https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L676
+other instance: https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L676
 https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L679
 https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L682
 https://github.com/code-423n4/2023-04-rubicon/blob/main/contracts/RubiconMarket.sol#L682
