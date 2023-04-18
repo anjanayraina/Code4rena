@@ -1,0 +1,5 @@
+Link: https://www.youtube.com/watch?v=YfLmaCaVYn8&list=PLO5VPQH6OWdX-Rh7RonjZhOd9pb9zOnHW&index=4&ab_channel=SmartContractProgrammer
+
+The uniswap protocol always tries to maintain the ratio that the tokens were in. 
+So no matter how much amount of tokens you provide to the pool,  the pool will take the largest amount it can 
+such that the ratio of the pool is still maintained. 
