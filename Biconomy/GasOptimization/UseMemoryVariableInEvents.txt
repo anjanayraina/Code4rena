@@ -1,0 +1,4 @@
+Link : https://code4rena.com/reports/2022-12-forgeries#g-02-emitting-storage-values-instead-of-the-memory-one:~:text=%5BG%2D02%5D%20Emitting%20storage%20values%20instead%20of%20the%20memory%20one.
+
+Caching the storage variables as memory inside a function and then trasmitting the event 
+saves gas 

@@ -1,0 +1,3 @@
+A vault is a contract in which the user first deposits some amount of tokens and in return the vault issues some 
+shares in favor of that owner. These share denote the ownership of the valut contract that the user has 
+Later the user can also withdraw the shares and get the tokens with the intented profit or loss that went off with the shares 

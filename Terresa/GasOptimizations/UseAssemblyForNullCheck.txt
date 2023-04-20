@@ -1,0 +1,3 @@
+Link : https://code4rena.com/reports/2022-12-tessera#g-01-use-assembly-to-check-for-address0:~:text=%5BG%2D01%5D%20Use%20assembly%20to%20check%20for%20address(0)
+
+Use assembly for null check

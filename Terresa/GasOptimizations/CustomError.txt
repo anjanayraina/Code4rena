@@ -1,0 +1,4 @@
+Link: https://code4rena.com/reports/2022-12-tessera#g-01-use-assembly-to-check-for-address0:~:text=%5BG%2D05%5D%20Use%20Custom%20Errors
+
+Use custom errors instead of adding a string in require  
+
