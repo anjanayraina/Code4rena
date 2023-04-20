@@ -1,0 +1,3 @@
+Link : https://code4rena.com/reports/2022-12-forgeries#g-02-emitting-storage-values-instead-of-the-memory-one:~:text=%5BG%2D06%5D%20A%20modifier%20used%20only%20once%20and%20not%20being%20inherited%20should%20be%20inlined%20to%20save%20gas
+
+The modifier used only once can be inlined and can just be removed from the contract 
