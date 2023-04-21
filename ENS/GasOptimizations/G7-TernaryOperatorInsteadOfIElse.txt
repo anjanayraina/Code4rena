@@ -1,0 +1,28 @@
+# [G-07] Consider using ternary operator instead of plain if-else whenever possible 
+
+Consider using a ternary operator when you are checking for simple if else conditions as it is more gas efficient 
+
+POC : 
+
+Consider these two functions 
+
+//gas cost : 610 
+ function compare1 (uint x) public returns (bool){
+        return x>10? true : false;
+    }
+// gas cost : 645 
+    function compare2(uint x) public returns(bool){
+        if(x > 10){
+            return true;
+        }
+        else{
+            return false;
+            
+        }
+    }
+
+The refracoring of if else statements saves about 35 gas units per instance 
+
+Link : https://github.com/code-423n4/2023-04-ens/blob/main/contracts/dnsregistrar/OffchainDNSResolver.sol#L123-L128
+https://github.com/code-423n4/2023-04-ens/blob/main/contracts/dnsregistrar/OffchainDNSResolver.sol#L150-L158
+
