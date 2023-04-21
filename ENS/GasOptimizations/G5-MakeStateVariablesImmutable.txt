@@ -1,0 +1,5 @@
+# [G-05] Make State Variables immutable that are only assigned at the constructor 
+
+State variables that are only assigned at the constructor and not changed after that can be made 
+immutable . If the variables are known from before the deployment of the contract , they can be made constant and 
+their value can just be hardcoded in the contract 

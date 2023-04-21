@@ -1,0 +1,7 @@
+# [G-06] Use unchecked for checking for Null Address/address(0)
+
+Consider adding the Null Address check inside the unchecked block as this doesnt add any additional checks that might 
+increase the gas cost. 
+
+Link : https://github.com/code-423n4/2023-04-ens/blob/main/contracts/dnsregistrar/OffchainDNSResolver.sol#L102
+https://github.com/code-423n4/2023-04-ens/blob/main/contracts/dnsregistrar/OffchainDNSResolver.sol#L197
