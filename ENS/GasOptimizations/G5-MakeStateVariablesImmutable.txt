@@ -3,3 +3,5 @@
 State variables that are only assigned at the constructor and not changed after that can be made 
 immutable . If the variables are known from before the deployment of the contract , they can be made constant and 
 their value can just be hardcoded in the contract 
+
+Link : https://github.com/code-423n4/2023-04-ens/blob/main/contracts/dnsregistrar/OffchainDNSResolver.sol#L39

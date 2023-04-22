@@ -1,4 +1,5 @@
 Link : https://code4rena.com/reports/2023-01-biconomy#low-risk-and-non-critical-issues:~:text=%5BL%2D04%5D%20Gas%20griefing/theft%20is%20possible%20on%20unsafe%20external%20call
 
 There can be a grieving attack done on the relayer of the contract . This can make the contract useless if the attacker is willing 
-to spend some amount of gas continously to the function 
+to spend some amount of gas continously to the function.
+

@@ -1,0 +1,4 @@
+Link : https://code4rena.com/reports/2023-01-biconomy/#medium-risk-findings-8:~:text=Risk%20Findings%20(8)-,%5BM%2D01%5D%20Griefing%20attacks%20on%20handleOps%20and%20multiSend%20logic,-Submitted%20by%20V_B
+
+Avoid processing multiple things in an array and if it is even necessary then avoid adding unnecessary require checks 
+that would revert the whole transaction to the original state 

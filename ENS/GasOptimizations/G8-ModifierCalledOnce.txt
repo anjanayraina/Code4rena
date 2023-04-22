@@ -3,4 +3,4 @@
 Consider adding the check directly to the function if the check is required only once in the contract 
 No need of creating a modifier for just one check 
 
-Link : https://github.com/code-423n4/2023-04-ens/blob/main/contracts/dnsregistrar/DNSRegistrar.sol#L73-L78
+Link: https://github.com/code-423n4/2023-04-ens/blob/main/contracts/dnsregistrar/DNSRegistrar.sol#L73-L78
