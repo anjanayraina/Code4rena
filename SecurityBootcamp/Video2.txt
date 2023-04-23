@@ -1,6 +1,6 @@
-Link : https://www.youtube.com/watch?v=Jiis5Kr_QU0&list=PLNLh1EyDzSGP-lkNCBhCptoJ-NMu_BYfS&index=2&t=301s&ab_channel=EthereumEngineeringGroup
+Link: https://www.youtube.com/watch?v=Jiis5Kr_QU0&list=PLNLh1EyDzSGP-lkNCBhCptoJ-NMu_BYfS&index=2&t=301s&ab_channel=EthereumEngineeringGroup
 
-Slides : https://drive.google.com/file/d/1ZnsNVuCwTGDQn0LdrzRwQ5WQKcUxSMPJ/view?usp=sharing
+Slides: https://drive.google.com/file/d/1ZnsNVuCwTGDQn0LdrzRwQ5WQKcUxSMPJ/view?usp=sharing
 
 Front running is just the validators taking advantage of the that they can, send another transaction using the contents 
 of the previous transaction with a higher gas fee so that their transaction can get included in the block more quicker 
