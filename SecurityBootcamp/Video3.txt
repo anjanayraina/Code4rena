@@ -1,1 +1,8 @@
 Link : https://www.youtube.com/watch?v=QfFjUMPtsM0&list=PLNLh1EyDzSGP-lkNCBhCptoJ-NMu_BYfS&index=3&ab_channel=EthereumEngineeringGroup
+
+Commit-reveal scheme can be used to to prevent front running attacks 
+
+Error Propogration : 
+
+Some times the reverts are not done by the functions instead the function returns a bool , this bool must be handled correctly 
+so that the erorr is propogated to the functions calls that have been done in the contract 

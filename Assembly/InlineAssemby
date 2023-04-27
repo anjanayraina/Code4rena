@@ -5,3 +5,10 @@ Values of Typed Variables :
 
 This is done by solidity itself but in inline assembly , the higher order bits in data that contains less than 256 bits 
 need to be cleaned by the programmer itself.
+
+Memory Management : 
+
+The free memory pointer points at 0x80 position in the start and then is updated whenever the memory is filled . A sign of caution using this pointer , there is no garuntee that the memory hasnt been allocated or used before so you cant assume that 
+its contents are 0 
+
+Memory Safety : https://docs.soliditylang.org/en/v0.8.19/assembly.html#values-of-typed-variables:~:text=rely%20on%20this.-,Memory%20Safety,-%EF%83%81
