@@ -1,0 +1,7 @@
+Yul is the language that is used for assembly in solidity. We use Yul in the form of inline assembly .
+An inline assembly block is marked by assembly { ... } . Different inline assembly blocks share no namespace, i.e. it is not possible to call a Yul function or access a Yul variable defined in a different inline assembly block.
+
+Values of Typed Variables : 
+
+This is done by solidity itself but in inline assembly , the higher order bits in data that contains less than 256 bits 
+need to be cleaned by the programmer itself.
