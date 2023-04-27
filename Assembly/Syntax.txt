@@ -1,0 +1,22 @@
+It has a delimiter block that defines the scope of the variables and operations that are to be done in the 
+block. Inside a code block, the following elements can be used (see the later sections for more details):
+
+literals, i.e. 0x123, 42 or "abc" (strings up to 32 characters)
+
+calls to builtin functions, e.g. add(1, mload(0))
+
+variable declarations, e.g. let x := 7, let x := add(y, 3) or let x (initial value of 0 is assigned)
+
+identifiers (variables), e.g. add(3, x)
+
+assignments, e.g. x := add(y, 3)
+
+blocks where local variables are scoped inside, e.g. { let x := 3 { let y := add(x, 1) } }
+
+if statements, e.g. if lt(a, b) { sstore(0, 1) }
+
+switch statements, e.g. switch mload(0) case 0 { revert() } default { mstore(0, 1) }
+
+for loops, e.g. for { let i := 0} lt(i, 10) { i := add(i, 1) } { mstore(i, 7) }
+
+function definitions, e.g. function f(a, b) -> c { c := add(a, b) }
