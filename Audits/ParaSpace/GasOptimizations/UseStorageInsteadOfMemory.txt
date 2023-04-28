@@ -1,0 +1,4 @@
+Link : https://code4rena.com/reports/2022-11-paraspace/#g01--save-gas-by-checking-against-default-weth-address:~:text=%5BG%E2%80%9103%5D%20Using%20storage%20instead%20of%20memory%20for%20structs/arrays%20saves%20gas
+
+When fetching data from a storage location, assigning the data to a memory variable causes all fields of the struct/array to be read from storage, 
+which incurs a Gcoldsload (2100 gas) for each field of the struct/array.
