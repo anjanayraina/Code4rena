@@ -1,0 +1,35 @@
+# [G-01] Use Custom Revert instead of require with long reason string 
+
+Consider creating custom errors and reverting them instead of using require with very long strings as they cost more gas 
+
+Example : 
+
+
+    modifier onlyNotFrozen(address staker) {
+        require(
+            !slasher.isFrozen(staker),
+            "StrategyManager.onlyNotFrozen: staker has been frozen and may be subject to slashing"
+        );
+        _;
+    }
+
+change this to 
+
+    error StakerFrozen();
+    modifier onlyNotFrozen(address staker) {
+        if(
+            slasher.isFrozen(staker),
+            
+        ){
+            revert StakerFrozen();
+        }
+        _;
+    }
+
+Total instances : 
+
+https://github.com/code-423n4/2023-04-eigenlayer/blob/main/src/contracts/core/StrategyManager.sol#L99
+https://github.com/code-423n4/2023-04-eigenlayer/blob/main/src/contracts/core/StrategyManager.sol#L105
+https://github.com/code-423n4/2023-04-eigenlayer/blob/main/src/contracts/core/StrategyManager.sol#L110
+https://github.com/code-423n4/2023-04-eigenlayer/blob/main/src/contracts/core/StrategyManager.sol#L110
+https://github.com/code-423n4/2023-04-eigenlayer/blob/main/src/contracts/core/StrategyManager.sol#L120
