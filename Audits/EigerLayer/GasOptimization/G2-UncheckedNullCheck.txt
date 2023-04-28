@@ -1,0 +1,9 @@
+# [G-02] Use unchecked for checking for Null Address/address(0)
+
+Consider adding the Null Address check inside the unchecked block as this doesn't add any additional checks that might 
+increase the gas cost. 
+
+Instance : 
+https://github.com/code-423n4/2023-04-eigenlayer/blob/main/src/contracts/core/StrategyManager.sol#L343
+https://github.com/code-423n4/2023-04-eigenlayer/blob/main/src/contracts/core/StrategyManager.sol#L631
+https://github.com/code-423n4/2023-04-eigenlayer/blob/main/src/contracts/core/StrategyManager.sol#L684
