@@ -1,0 +1,4 @@
+Link : https://code4rena.com/reports/2022-11-paraspace#g02--save-gas-by-batching-ntoken-operations:~:text=%5BG%E2%80%9109%5D%20require()/revert()%20strings%20longer%20than%2032%20bytes%20cost%20extra%20gas
+
+keep the require statements less than 32 bytes as they cost extra gas , you can also create custom errors 
+and then revert them 

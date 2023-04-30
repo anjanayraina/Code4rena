@@ -1,0 +1,3 @@
+Link : https://code4rena.com/reports/2022-11-paraspace#g02--save-gas-by-batching-ntoken-operations:~:text=%5BG%E2%80%9107%5D%20Add,b)%3B%20x%20%3D%20b
+
+Add unchecked in places where there is no chance of an overflow because of a previous require check 
