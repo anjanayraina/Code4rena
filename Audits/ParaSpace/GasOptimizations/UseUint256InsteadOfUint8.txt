@@ -1,0 +1,4 @@
+Link : https://code4rena.com/reports/2022-11-paraspace#g02--save-gas-by-batching-ntoken-operations:~:text=%5BG%E2%80%9113%5D%20Usage%20of%20uints/ints%20smaller%20than%2032%20bytes%20(256%20bits)%20incurs%20overhead
+
+using uint8 instead of uint256 incurs overhead with the compiler cleaning out higher order bits , when possible use uint256 
+and downcast it whenever you need uint8 
