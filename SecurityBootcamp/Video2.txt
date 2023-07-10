@@ -4,3 +4,15 @@ Slides: https://drive.google.com/file/d/1ZnsNVuCwTGDQn0LdrzRwQ5WQKcUxSMPJ/view?u
 
 Front running is just the validators taking advantage of the that they can, send another transaction using the contents 
 of the previous transaction with a higher gas fee so that their transaction can get included in the block more quicker 
+
+Prevention Tricks : 
+
+
+1) Authorized Watchers : In this system, there are only some people that can submit the transactions to the function and the 
+people are chosen by the owner itself . Now there is still a chance of the watchers becoming dishonest and front running some 
+of the other watchers 
+
+2) Commit Reveal : This works by adding the hash of the msg.sender and the solution to check for the validity of the 
+indivisual proof 
+
+3 ) Timeout : 
