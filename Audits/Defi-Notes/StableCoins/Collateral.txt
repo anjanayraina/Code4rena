@@ -1,0 +1,3 @@
+In short , collateral is an asset that the lender can use in the event that the lender defaults on their loans.
+
+Usually in defi , there is a concept of overcollaterization to secure the asset in the event of a market crash
