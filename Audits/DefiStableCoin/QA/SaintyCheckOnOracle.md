@@ -1,0 +1,1 @@
+# [QA-01] Some of the sanity checks on the Chainlink Oracle are missing 

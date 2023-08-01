@@ -6,6 +6,7 @@ The functions burn and mint in the DecentralizedStableCoin contract have the Onl
 
 ## Total instances 
 https://github.com/Cyfrin/2023-07-foundry-defi-stablecoin/blob/main/src/DSCEngine.sol#L201
+https://github.com/Cyfrin/2023-07-foundry-defi-stablecoin/blob/main/src/DSCEngine.sol#L279
 
 ## Tools Used 
 
