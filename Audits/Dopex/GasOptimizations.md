@@ -25,7 +25,7 @@ https://github.com/code-423n4/2023-08-dopex/blob/main/contracts/perp-vault/Perpe
 ### Mitigation
 Instead of using address(this), it is more gas-efficient to pre-calculate and use the hardcoded address.
 
-# [G-07] Use assembly to check for address(0)
+# [G-02] Use assembly to check for address(0)
 
 ### Total Instances : 
 
