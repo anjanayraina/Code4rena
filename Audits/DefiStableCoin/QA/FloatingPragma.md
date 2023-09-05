@@ -1,9 +1,13 @@
-# [M-01] Onlyowner modifier prevents DSCEngine contract from minting and buring the tokens 
+# [QA-02] Floating Pragma must be avoided using in the functions 
 
 ## Medium Risk 
 
+# Summary
+
+The use of Floating Pragma must be avoided to prevent contracts from accidently getting deployed using an older compiler version with unfixed bugs 
+
 ## Impact
-The functions burn and mint in the DecentralizedStableCoin contract have the Onlyowner modifier , so only the address that deployed the contract can call those functions. But these functions are also called by DSCEngine , now since the DSCEngine contract doesnt deploy the DecentralizedStableCoin contract . This makes the burn and mint functions unusable by DSCEngine . This will make every call to depositCollateralAndMintDsc and redeemCollateralForDsc revert and hence break the functioning 
+some unfixed bugs that might exsit that then hamper the functioning of the deployed contracts 
 
 ## Total instances 
 https://github.com/Cyfrin/2023-07-foundry-defi-stablecoin/blob/main/src/DSCEngine.sol#L201
