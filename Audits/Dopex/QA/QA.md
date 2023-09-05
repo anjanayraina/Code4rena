@@ -25,5 +25,18 @@ Since the contract is dealing with weth , its suggested to use addLiquidityETH i
 
 Link : https://github.com/code-423n4/2023-08-dopex/blob/main/contracts/amo/UniV2LiquidityAmo.sol#L223
 
+# [NC-03] Adding Checks for avoiding slippage 
+
+While adding liquidity , consider adding a check for amount0Min and amount1Min to check that they are greater than 0. This will help avoid slippage for while adding liquidity . Consider adding this check 
+```    
+require(_amount0Min!=0 && _amount1Min!=0);
+```
+
+Link : 
+
+https://github.com/code-423n4/2023-08-dopex/blob/main/contracts/amo/UniV2LiquidityAmo.sol#L223
+
+https://github.com/code-423n4/2023-08-dopex/blob/main/contracts/amo/UniV3LiquidityAmo.sol#L178-L191
+
 
 
