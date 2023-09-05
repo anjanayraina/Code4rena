@@ -2,7 +2,8 @@
 
 Since the contract is only dealing with weth and rdpx tokens , so all the transactions that happen must involve those tokens only. Please consider adding a check for checking if the token address passed is either tokenA or tokenB
 
-```  function approveContractToSpend(
+```  
+function approveContractToSpend(
     address _token,
     address _spender,
     uint256 _amount
@@ -14,3 +15,15 @@ Since the contract is only dealing with weth and rdpx tokens , so all the transa
     IERC20WithBurn(_token).approve(_spender, _amount); 
 
   }
+
+```
+Link : https://github.com/code-423n4/2023-08-dopex/blob/main/contracts/amo/UniV2LiquidityAmo.sol#L126-L135
+
+# [NC-02] Consider using addLiquidityETH instead of addLiquidity 
+
+Since the contract is dealing with weth , its suggested to use addLiquidityETH instead of using addLiquidity . Its also given in the uniswap docs ( https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/providing-liquidity#:~:text=use%20addLiquidity.%20If%20WETH%20is%20involved%2C%20use%20addLiquidityETH )
+
+Link : https://github.com/code-423n4/2023-08-dopex/blob/main/contracts/amo/UniV2LiquidityAmo.sol#L223
+
+
+
