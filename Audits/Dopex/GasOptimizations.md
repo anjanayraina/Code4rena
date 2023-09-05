@@ -23,4 +23,4 @@ https://github.com/code-423n4/2023-08-dopex/blob/main/contracts/perp-vault/Perpe
 https://github.com/code-423n4/2023-08-dopex/blob/main/contracts/perp-vault/PerpetualAtlanticVault.sol#L384+
 
 Mitigation
-Instead of using address(this), it is more gas-efficient to pre-calculate and use the hardcoded address. Foundry’s script.sol and solmate’s LibRlp.sol contracts can help achieve this.
+Instead of using address(this), it is more gas-efficient to pre-calculate and use the hardcoded address. 
